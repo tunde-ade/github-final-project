@@ -6,7 +6,7 @@
 
    # Author: Upkar Lidder (IBM)
    # Additional Authors:
-   # <tunde-ade>
+   # tunde-ade
 
    # Input:
    # p, principal amount
