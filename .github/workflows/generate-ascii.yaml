@@ -7,7 +7,7 @@ jobs:
   ascii_job:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout repo
+    - name: Checkout repo
       uses: actions/checkout@v4
 
     - name: List Repo files
@@ -15,5 +15,5 @@ jobs:
   
     - name: Executing Shell Script
       run: |
-        chmod u+x ascii-script.sh
+        chmod +x ascii-script.sh
         ./ascii-script.sh
