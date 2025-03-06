@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-webapp
+  labels:
+    app: go-webapp
+  namespace: _{_NAMESPACE_}_
+spec:
+  replicas: _{_REPLICAS_}_
+  selector:
+    matchLabels:
+      app: go-webapp
+  template:
+    metadata:
+      labels:
+        app: go-webapp
+    spec:
+      containers:
+      - image: _{_IMAGE_}_
+        imagePullPolicy: Always
+        name: go-webapp
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
